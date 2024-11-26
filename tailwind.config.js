@@ -11,7 +11,7 @@ module.exports = {
         5: "#1c232e",
       },
       spacing: {
-        "custom-h": "calc(100vh - 64px)",
+        "custom-h": "calc(70vh)",
       },
     },
   },
