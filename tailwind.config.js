@@ -12,6 +12,8 @@ module.exports = {
       },
       spacing: {
         "custom-h": "calc(100vh - 4rem)",
+        "custom-1": "calc(100vh - 40vh)",
+        "custom-w": "calc(100vw - 30vw)",
       },
     },
   },

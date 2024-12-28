@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="/src/assets/css/style.css" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body id="container">
     <header class="h-16 w-full">
       <nav class="flex items-center h-full w-full">
         <div class="flex justify-center items-center h-full w-28">
-          <a class="text-base pt-2 pb-2 pl-4 pr-4 no-underline" href="#"> jeff </a>
+          <a class="text-base pt-2 pb-2 pl-4 pr-4 no-underline" href="#">
+            jeff
+          </a>
         </div>
         <div
           class="flex items-center w-full gap-16 text-white pl-16 bg-4 h-full rounded-l-full"
@@ -23,34 +25,69 @@
       </nav>
     </header>
     <main class="flex flex-col">
-      <div class="h-custom-h w-full pt-40 pl-20 pr-20 flex items-center flex-col gap-20">
+      <div
+        class="h-custom-h w-full pt-40 pl-20 pr-20 flex items-center flex-col gap-20"
+      >
         <div class="w-full flex justify-center">
           <div class="text-5 flex flex-col gap-4">
-            <p class="container-title flex justify-between text-4xl font-semibold">
-                Olá, me chamo
+            <p
+              class="container-title flex justify-between text-4xl font-semibold"
+            >
+              Olá, me chamo
             </p>
-              <h1>Jeferson Silva</h1>
-            <p class="text_description flex justify-end container-title">Desenvolvedor Front-End</p>
+            <h1>Jeferson Silva</h1>
+            <p class="text_description flex justify-end container-title">
+              Desenvolvedor Front-End
+            </p>
           </div>
         </div>
         <div class="w-full flex justify-center items-center gap-6">
           <span class="line_smidia"></span>
-          <a  href="https://github.com/Jeferson0Silva" class="link_smidia">
-            <img src="/src/assets/imgs/github.png" alt="" class="img_smidia">
+          <a href="https://github.com/Jeferson0Silva" class="link_smidia">
+            <img src="/src/assets/imgs/github.png" alt="" class="img_smidia" />
           </a>
-          <a href="https://www.linkedin.com/in/jeferson-silva-958bb0279/" class="link_smidia">
-            <img src="/src/assets/imgs/linkedin.png" alt="" class="img_smidia">
+          <a
+            href="https://www.linkedin.com/in/jeferson-silva-958bb0279/"
+            class="link_smidia"
+          >
+            <img
+              src="/src/assets/imgs/linkedin.png"
+              alt=""
+              class="img_smidia"
+            />
           </a>
           <a href="mailto:jefersonsas12@gmail.com" class="link_smidia">
-            <img src="/src/assets/imgs/o-email.png" alt="" class="img_smidia">
+            <img src="/src/assets/imgs/o-email.png" alt="" class="img_smidia" />
           </a>
           <span class="line_smidia"></span>
         </div>
       </div>
-      <div class="h-screen bg-4">
-        
+      <div class="flex flex-col h-custom-1 px-24 pt-24 gap-12">
+        <div class="w-full h-3/4 flex flex-col items-center gap-12 flex-1">
+          <h2 class="text-4xl font-semibold text-4">Sobre mim</h2>
+          <div class="flex h-5/6 w-custom-w gap-6">
+            <p class="text-sm text-justify">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consectetur ea laboriosam incidunt tempore? Dolores porro, enim,
+              quam perspiciatis quisquam fuga mollitia doloremque aut iusto
+              sequi eveniet illum totam veniam rerum?
+            </p>
+            <span class="w-1.5 h-28 bg-gradient-to-b from-3 rounded-full shadow-lg"></span>
+            <p class="text-sm text-justify">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consectetur ea laboriosam incidunt tempore? Dolores porro, enim,
+              quam perspiciatis quisquam fuga mollitia doloremque aut iusto
+              sequi eveniet illum totam veniam rerum?
+            </p>
+          </div>
+        </div>
+        <div class="aboutImgs w-full h-3/4 flex flex-col gap-4 justify-center items-center flex-1">
+        </div>
       </div>
     </main>
-    <footer class="bg-black h-72"></footer>
+    <footer class="h-screen">
+    </footer>
+
+    <script type="module" src="/src/components/about/index.js"></script>
   </body>
 </html>
