@@ -1,31 +1,49 @@
 const container = document.querySelector("#container")
 
-const imgs = []
+let imgs;
+let currentIndex = 0;
 
 const carousel = (url) => {
-  return `
-    <div id="carousel-modal" class="modal">
-      <div class="modal-content">
-        <div class="carousel">
-          <div class="carousel-slides">
-            <img class="imgs"
-            src="${url}"
-            alt=""
-            />
-          </div>
-          <button class="prev-btn">&lt;</button>
-          <button class="next-btn">&gt;</button>
+  const modal = document.createElement('div');
+  modal.id = 'modal';
+  modal.classList.add('modal');
+
+  modal.innerHTML = `
+    <div class="modalContent">
+      <div class="carousel">
+        <div class="carouselImgs">
+          <img class="imgs" src="${url}" alt="Carousel de imagens" />
         </div>
+        <button class="prevBtn">&lt;</button>
+        <button class="nextBtn">&gt;</button>
       </div>
-      <button id="close-carousel" class="close-btn">&times;</button>
     </div>
+    <button id="closeBtn" class="closeBtn">&times;</button>
   `;
+
+  return modal;
 };
 
-const CarouselStructure = () => {
-  const modal = container.querySelector("#carousel-modal");
-  const closeBtn = modal.querySelector("#close-carousel");
+const updateImage = (index) => {
+  const imgElement = document.querySelector('.carouselImgs img');
+  imgElement.src = imgs[index];
+};
+
+const CarouselStructure = (modal) => {
+  const closeBtn = modal.querySelector("#closeBtn");
+  const nextBtn = modal.querySelector(".nextBtn");
+  const prevBtn = modal.querySelector(".prevBtn");
   
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % imgs.length;
+    updateImage(currentIndex);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + imgs.length) % imgs.length;
+    updateImage(currentIndex);
+  });
+
   closeBtn.addEventListener('click', () => {
     modal.remove();
   });
@@ -35,8 +53,16 @@ const CarouselStructure = () => {
       modal.remove();
     }
   });
+};
 
-}
+const openModal = (imgsProject) => {
+  imgs = imgsProject;
+  currentIndex = 0;
+
+  const modal = carousel(imgs[currentIndex]);
+  container.appendChild(modal);
+  CarouselStructure(modal);
+};
 
 const openBtnMilao = container.querySelector('#openModalMilao');
 const openBtnNetflix = container.querySelector('#openModalNetflix');
@@ -44,40 +70,15 @@ const openBtnTrainee = container.querySelector('#openModalTrainee');
 
 openBtnTrainee.addEventListener('click', (e) => {
   e.preventDefault();
-  const imgsP = ('./assets/imgs/t1.png', './assets/imgs/t2.png', './assets/imgs/t3.png');
-  imgs.push({imgsP});
-
-  imgs.forEach ((post) => {
-    container.innerHTML += carousel(post.imgsP);
-  });
-  imgs.pop();
-
-  CarouselStructure();
+  openModal(['./assets/imgs/Trainee1.png', './assets/imgs/Trainee2.png', './assets/imgs/Trainee3.png']);
 });
 
 openBtnNetflix.addEventListener('click', (e) => {
   e.preventDefault();
-  const imgsP = ('./assets/imgs/n1.png', './assets/imgs/n2.png', './assets/imgs/n3.png');
-  imgs.push({imgsP});
-
-  imgs.forEach ((post) => {
-    container.innerHTML += carousel(post.imgsP);
-  });
-  imgs.pop();
-
-  CarouselStructure();
+  openModal(['./assets/imgs/Netflix1.png', './assets/imgs/Netflix2.png', './assets/imgs/Netflix3.png']);
 });
 
 openBtnMilao.addEventListener('click', (e) => {
   e.preventDefault();
-  const imgsP = ('./assets/imgs/m1.png', './assets/imgs/m2.png', './assets/imgs/m3.png');
-  imgs.push({imgsP});
-
-  imgs.forEach ((post) => {
-    container.innerHTML += carousel(post.imgsP);
-  });
-  imgs.pop();
-
-  CarouselStructure();
+  openModal(['./assets/imgs/Milao1.png', './assets/imgs/Milao2.png', './assets/imgs/Milao3.png']);
 });
-
