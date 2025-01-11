@@ -14,11 +14,17 @@ const carousel = (url) => {
         <div class="carouselImgs">
           <img class="imgs" src="${url}" alt="Carousel de imagens" />
         </div>
-        <button class="prevBtn">&lt;</button>
-        <button class="nextBtn">&gt;</button>
+        <button class="prevBtn">
+          <img class="imgPrevBtn" src="./assets/imgs/prevbtn.png" alt="previous button">
+        </button>
+        <button class="nextBtn">
+          <img class="imgPrevBtn" src="./assets/imgs/nextbtn.png" alt="next button">
+        </button>
       </div>
     </div>
-    <button id="closeBtn" class="closeBtn">&times;</button>
+    <button id="closeBtn" class="closeBtn">
+      <img class="imgCloseBtn" src="./assets/imgs/closebtn.png" alt="close button">
+    </button>
   `;
 
   return modal;
@@ -46,12 +52,6 @@ const CarouselStructure = (modal) => {
 
   closeBtn.addEventListener('click', () => {
     modal.remove();
-  });
-  
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.remove();
-    }
   });
 };
 
