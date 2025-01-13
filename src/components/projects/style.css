@@ -1,0 +1,63 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000004f;
+}
+
+.closeBtn,
+.prevBtn, 
+.nextBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    position: absolute;
+}
+
+.closeBtn {
+    top: 20.8%;
+    left: 78%;
+    width: 32px;
+    height: 32px;
+    background-color: #707070b0;
+}
+
+.prevBtn {
+    top: 50%;
+    left: 19.5%;
+}
+
+.nextBtn {
+    top: 50%;
+    left: 78%;
+}
+
+.closeBtn:hover {
+    background-color: #a3a3a3b0;
+}
+
+.imgCloseBtn{
+    width: 12px;
+    height: 12px;
+}
+
+.imgPrevBtn, .imgNextBtn {
+    width: 48px;
+    height: 48px;
+}
+
+.carouselImgs {
+    height: 60vh;
+    width: 60vw;
+}
+.imgs {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
