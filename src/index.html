@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/output.css" />
     <link rel="stylesheet" href="/src/assets/css/style.css" />
     <link rel="stylesheet" href="/src/components/projects/style.css">
+    <link rel="stylesheet" href="/src/components/about/style.css">
     <title>Portfolio</title>
   </head>
   <body id="container">
@@ -63,30 +64,28 @@
           <span class="line_smidia"></span>
         </div>
       </div>
-      <div id="sobre" class="flex flex-col h-custom-1 px-24 pt-24 gap-12">
-        <div class="w-full h-3/4 flex flex-col items-center gap-12 flex-1">
-          <h2 class="text-4xl font-semibold text-4">Sobre mim</h2>
-          <div class="flex h-5/6 w-custom-w gap-6">
-            <p class="text-sm text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur ea laboriosam incidunt tempore? Dolores porro, enim,
-              quam perspiciatis quisquam fuga mollitia doloremque aut iusto
-              sequi eveniet illum totam veniam rerum?
-            </p>
-            <span class="w-1.5 h-28 bg-gradient-to-b from-3 rounded-full shadow-lg"></span>
-            <p class="text-sm text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur ea laboriosam incidunt tempore? Dolores porro, enim,
-              quam perspiciatis quisquam fuga mollitia doloremque aut iusto
-              sequi eveniet illum totam veniam rerum?
-            </p>
+      <div id="sobre" class="flex flex-col h-custom-1 pt-36 gap-36">
+        <div class="w-full flex flex-col items-center px-24">
+          <div class="flex h-full w-custom-w px-48 gap-16">
+            <div class="w-full flex  flex-1">
+              <div class="relative w-72 h-72">
+                <img class="relative z-10 w-full h-full" src="/src/assets/imgs/profile.jpg" alt="">
+                <div class="absolute top-5 left-5 w-full h-full border-[20px] border-[#e5e7eb]"></div>
+              </div>              
+            </div>
+            <div class="flex flex-col w-full gap-5">
+              <h2 class="text-4xl font-semibold text-4">Sobre</h2>
+              <p class="text-sm text-gray-700 text-justify w-full">
+                Olá! Meu nome é Jeferson, sou desenvolvedor web e estudante de Análise e Desenvolvimento de Sistemas. 
+                Gosto de ser criativo na parte de design e de estruturar bem meus passos. Além disso, estou um pouco familiarizado com Scrum em alguns projetos básicos nos quais participei.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="aboutImgs w-full h-3/4 flex flex-col gap-4 justify-center items-center flex-1">
-        </div>
+        <div class="carouselContainer w-full overflow-hidden bg-4 h-20 flex items-center relative"></div>
       </div>
-      <div id="projetos" class="h-auto flex flex-col items-center">
-        <h2 class="text-4xl font-semibold text-4 pt-24">Projetos</h2>
+      <div id="projetos" class="h-auto flex flex-col mt-[70px] items-center">
+        <h2 class="text-4xl font-semibold text-4">Projetos</h2>
 
         <div class="h-80 w-custom-w flex flex-col">
           <div class="w-full h-24  flex justify-between pt-6">
