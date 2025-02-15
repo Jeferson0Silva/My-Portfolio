@@ -24,11 +24,5 @@ const imgs = () => {
 const carouselContainer = container.querySelector(".carouselContainer")
 
 for (let i = 0; i < 4; i++) {
-    carouselContainer.innerHTML += imgs();
+  carouselContainer.innerHTML += imgs()
 }
-
-  
-  
-
-
-
