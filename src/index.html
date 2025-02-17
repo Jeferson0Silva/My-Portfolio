@@ -13,7 +13,7 @@
   <body id="container">
     <header class="h-16 w-full" id="inicio">
       <nav class="flex h-full w-full items-center">
-        <div class="flex h-full w-28 items-center justify-center">
+        <div class="headerName flex h-full w-28 items-center justify-center">
           <a
             class="flex h-[48px] w-[92px] items-center justify-center rounded-3xl font-semibold no-underline duration-300 hover:bg-[#4d4d4d5d]"
             href="#inicio"
@@ -22,7 +22,8 @@
           </a>
         </div>
         <div
-          class="flex h-full w-full items-center gap-6 rounded-l-full bg-4 pl-6 text-white"
+          class="flex h-full w-full items-center justify-center gap-6 bg-4 text-white
+          sm:rounded-l-full sm:pl-6 sm:justify-start"
         >
           <a
             class="flex h-[48px] w-[92px] items-center justify-center rounded-3xl no-underline duration-300 hover:bg-[#00000060]"
@@ -47,64 +48,79 @@
     </header>
     <main class="flex flex-col">
       <div
-        class="flex h-custom-h w-full flex-col items-center gap-20 pl-20 pr-20 pt-40"
+        class="flex h-custom-h w-full flex-col items-center gap-20 px-10 pt-40
+        lg:px-20"
       >
-        <div class="flex w-full justify-center">
-          <div class="flex flex-col gap-4 text-5">
+        <div class="flex max-w-[614.77px] justify-center">
+          <div class="flex w-full flex-col gap-4 text-5">
             <p
-              class="container-title flex justify-between text-4xl font-semibold"
+              class="container-title flex justify-between text-xl font-medium
+              sx:text-2xl sx:font-medium lg:text-4xl lg:font-semibold"
             >
               Olá, me chamo
             </p>
-            <h1>Jeferson Silva</h1>
-            <p class="text_description container-title flex justify-end">
+            <h1 class="text-4xl font-semibold text-center
+            sx:text-6xl lg:text-8xl">Jeferson Silva</h1>
+            <p class="text-xs tracking-[1px] container-title flex justify-end
+            sx:text-base sx:tracking-[1.5px] lg:text-lg lg:tracking-[2px]">
               Desenvolvedor Front-End
             </p>
           </div>
         </div>
-        <div class="flex w-full items-center justify-center gap-6">
-          <span class="line_smidia"></span>
+        <div class="flex items-center justify-center gap-3
+        lg:gap-6">
+          <span class="w-20 h-px bg-3
+          sx:w-36 lg:w-52"></span>
           <a
-            class="link_smidia"
+            class="flex items-center justify-center"
             href="https://github.com/Jeferson0Silva"
             target="_blank"
           >
             <img
-              class="img_smidia hover:scale-110 duration-200"
+              class="w-4 h-4 hover:scale-110 duration-200
+              lg:w-7 lg:h-7"
               src="/src/assets/imgs/github.png"
               alt=""
             />
           </a>
           <a
-            class="link_smidia"
+            class="flex items-center justify-center"
             href="https://www.linkedin.com/in/jeferson-silva-958bb0279/ "
             target="_blank"
           >
             <img
-              class="img_smidia hover:scale-110 duration-200"
+              class="w-4 h-4 hover:scale-110 duration-200
+              lg:w-7 lg:h-7"
               src="/src/assets/imgs/linkedin.png"
               alt=""
             />
           </a>
           <a
-            class="link_smidia"
+            class="flex items-center justify-center"
             href="mailto:jefersonsas12@gmail.com"
             target="_blank"
           >
             <img
-              class="img_smidia hover:scale-110 duration-200"
+              class="w-4 h-4 hover:scale-110 duration-200
+              lg:w-7 lg:h-7"
               src="/src/assets/imgs/o-email.png"
               alt=""
             />
           </a>
-          <span class="line_smidia"></span>
+          <span class="w-20 h-px bg-3
+          sx:w-36 lg:w-52"></span>
         </div>
       </div>
-      <div class="flex h-custom-1 flex-col gap-36 pt-36" id="sobre">
-        <div class="flex w-full flex-col items-center px-24">
-          <div class="flex h-full w-custom-w gap-16 px-48">
-            <div class="flex w-full flex-1">
-              <div class="relative h-72 w-72">
+      <div class="flex h-custom-1 flex-col gap-36 
+      lg:pt-36" id="sobre">
+        <div class="flex w-full flex-col items-center 
+        xl:px-24">
+          <div class="flex flex-col h-full w-custom-w gap-16
+          lg:flex-row xll:pl-48 xll:pr-36">
+            <div class="flex w-full flex-1
+            xl:flex-row">
+              <div class="relative h-44 w-40
+              sx:h-52 sx:w-52 xl:h-72 xl:w-72">
                 <img
                   class="relative z-10 h-full w-full"
                   src="/src/assets/imgs/profile.jpg"
@@ -116,7 +132,8 @@
               </div>
             </div>
             <div class="flex w-full flex-col gap-6">
-              <h2 class="text-5xl font-light text-4">Sobre</h2>
+              <h2 class="text-3xl font-light text-4
+              sm:text-4xl lg:text-5xl">Sobre</h2>
               <p class="w-full text-justify text-sm text-gray-700">
                 Olá! Meu nome é Jeferson, sou desenvolvedor front-end e
                 estudante de Desenvolvimento de Sistemas. Já trabalhei com
@@ -216,7 +233,7 @@
             </div>
           </div>
         </div>
-        <span class="line_projects w-custom-w"></span>
+        <span class="h-px bg-gray-300 w-custom-w"></span>
 
         <div class="flex h-80 w-custom-w flex-col">
           <div class="flex h-24 w-full justify-between pt-6">
@@ -295,7 +312,7 @@
             </div>
           </div>
         </div>
-        <span class="line_projects w-custom-w"></span>
+        <span class="h-px bg-gray-300 w-custom-w"></span>
 
         <div class="flex h-80 w-custom-w flex-col">
           <div class="flex h-24 w-full justify-between pt-6">
@@ -370,7 +387,7 @@
             </div>
           </div>
         </div>
-        <span class="line_projects w-custom-w"></span>
+        <span class="h-px bg-gray-300 w-custom-w"></span>
       </div>
     </main>
     <footer class="mt-24 flex h-auto flex-col bg-4" id="contato">

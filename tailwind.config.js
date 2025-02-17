@@ -15,6 +15,10 @@ module.exports = {
         "custom-1": "calc(100vh - 10vh)",
         "custom-w": "calc(100vw - 30vw)",
       },
+      screens: {
+        sx: "490px",
+        xll: "1670px",
+      },
     },
   },
   plugins: [],
