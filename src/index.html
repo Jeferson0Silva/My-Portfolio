@@ -11,12 +11,14 @@
   </head>
 
   <body id="container">
-    <header class="h-16 w-full" id="inicio">
+    <header class="h-16 w-full">
       <nav class="flex h-full w-full items-center">
-        <div class="headerName flex h-full w-28 items-center justify-center">
+        <div class="hidden h-full w-28 items-center justify-center
+        sm:flex">
           <a
             class="flex h-[48px] w-[92px] items-center justify-center rounded-3xl font-semibold no-underline duration-300 hover:bg-[#4d4d4d5d]"
-            href="#inicio"
+            href="https://github.com/Jeferson0Silva"
+            target="_blank"
           >
             &lt;Jeff /&gt;
           </a>
@@ -48,7 +50,7 @@
     </header>
     <main class="flex flex-col">
       <div
-        class="flex h-custom-h w-full flex-col items-center gap-20 px-10 pt-40
+        class="flex h-custom-h w-full flex-col justify-center items-center gap-20 px-10
         lg:px-20"
       >
         <div class="flex max-w-[614.77px] justify-center">
@@ -69,7 +71,7 @@
         </div>
         <div class="flex items-center justify-center gap-3
         lg:gap-6">
-          <span class="w-20 h-px bg-3
+          <span class="w-14 h-px bg-3
           sx:w-36 lg:w-52"></span>
           <a
             class="flex items-center justify-center"
@@ -77,7 +79,7 @@
             target="_blank"
           >
             <img
-              class="w-4 h-4 hover:scale-110 duration-200
+              class="w-6 h-6 hover:scale-110 duration-200
               lg:w-7 lg:h-7"
               src="/src/assets/imgs/github.png"
               alt=""
@@ -89,7 +91,7 @@
             target="_blank"
           >
             <img
-              class="w-4 h-4 hover:scale-110 duration-200
+              class="w-6 h-6 hover:scale-110 duration-200
               lg:w-7 lg:h-7"
               src="/src/assets/imgs/linkedin.png"
               alt=""
@@ -101,26 +103,26 @@
             target="_blank"
           >
             <img
-              class="w-4 h-4 hover:scale-110 duration-200
+              class="w-6 h-6 hover:scale-110 duration-200
               lg:w-7 lg:h-7"
               src="/src/assets/imgs/o-email.png"
               alt=""
             />
           </a>
-          <span class="w-20 h-px bg-3
+          <span class="w-14 h-px bg-3
           sx:w-36 lg:w-52"></span>
         </div>
       </div>
-      <div class="flex h-custom-1 flex-col gap-36 
-      lg:pt-36" id="sobre">
+      <div class="flex h-[60vh] flex-col gap-36 
+      sm:h-custom-1 lg:pt-36" id="sobre">
         <div class="flex w-full flex-col items-center 
         xl:px-24">
-          <div class="flex flex-col h-full w-custom-w gap-16
-          lg:flex-row xll:pl-48 xll:pr-36">
+          <div class="flex flex-col h-full w-custom-w
+          sm:gap-16 lg:flex-row xll:pl-48 xll:pr-36">
             <div class="flex w-full flex-1
             xl:flex-row">
-              <div class="relative h-44 w-40
-              sx:h-52 sx:w-52 xl:h-72 xl:w-72">
+              <div class="hidden relative h-52 w-52
+              sx:w-52 sm:flex xl:h-72 xl:w-72">
                 <img
                   class="relative z-10 h-full w-full"
                   src="/src/assets/imgs/profile.jpg"
@@ -132,9 +134,9 @@
               </div>
             </div>
             <div class="flex w-full flex-col gap-6">
-              <h2 class="text-3xl font-light text-4
+              <h2 class="text-3xl text-4
               sm:text-4xl lg:text-5xl">Sobre</h2>
-              <p class="w-full text-justify text-sm text-gray-700">
+              <p class="w-full text-justify hyphens-auto text-sm text-gray-700">
                 Olá! Meu nome é Jeferson, sou desenvolvedor front-end e
                 estudante de Desenvolvimento de Sistemas. Já trabalhei com
                 refatoração de código, redesign e melhorias na responsividade.
@@ -145,18 +147,23 @@
           </div>
         </div>
         <div
-          class="carouselContainer relative flex h-20 w-full items-center overflow-hidden bg-4"
+          class="carouselContainer relative flex h-16 w-full text-1 text-lg items-center overflow-hidden bg-4
+          md:h-20 md:font-semibold"
         ></div>
       </div>
-      <div class="mt-[90px] flex h-auto flex-col items-center" id="projetos">
-        <div class="flex h-28 w-custom-w justify-between">
-          <h2 class="text-5xl font-light text-4">Explore Meus Projetos</h2>
+      <div class="flex h-auto mt-6 flex-col items-center" id="projetos">
+        <div class="flex h-28 w-[80vw] justify-between
+        lg:w-custom-w">
+          <h2 class="text-2xl text-4
+          sx:text-3xl sm:text-4xl lg:text-5xl">Explore Meus Projetos</h2>
         </div>
 
-        <div class="flex h-80 w-custom-w flex-col">
+        <div class="flex h-full w-[80vw] flex-col
+        lg:h-80 lg:w-custom-w">
           <div class="flex h-24 w-full justify-between pt-6">
             <div class="flex h-4/5 w-72 flex-col gap-2">
-              <h3 class="text-xl font-medium text-4">
+              <h3 class="font-medium text-4
+              lg:text-xl">
                 Trainee Student's Website
               </h3>
               <div class="flex gap-1 pl-2">
@@ -177,7 +184,8 @@
                 />
               </div>
             </div>
-            <div class="flex h-4/5 w-40 justify-end gap-2">
+            <div class="flex flex-col h-4/5 w-40 items-end gap-2
+            sx:flex-row sx:justify-end">
               <a
                 class="flex h-7 w-24 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white"
                 href="https://trainee-students.netlify.app/src/pages/home.html"
@@ -185,33 +193,40 @@
                 >Ver Projeto</a
               >
               <a
-                class="flex h-7 w-16 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white"
+                class="flex h-7 w-24 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white
+                lg:h-7 lg:w-16"
                 href="https://github.com/Jeferson0Silva/trainee"
                 target="_blank"
                 >GitHub</a
               >
             </div>
           </div>
-          <div class="flex h-full w-full">
-            <div class="flex h-full w-3/5 items-center gap-6">
+          <div class="flex h-full w-full flex-col items-center gap-3 mb-3
+          lg:flex-row lg:mb-0 lg:gap-0">
+            <div class="flex h-full w-full pt-4 items-center justify-center gap-6
+            xl:pt-0 xl:w-3/5 fh:justify-start">
               <img
                 class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
                 src="/src/assets/imgs/Trainee1.png"
                 alt=""
               />
               <img
-                class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
+                class="hidden h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]
+                xl:flex"
                 src="/src/assets/imgs/Trainee2.png"
                 alt=""
               />
               <img
-                class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
+                class="hidden h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]
+                fh:flex"
                 src="/src/assets/imgs/Trainee3.png"
                 alt=""
               />
             </div>
-            <div class="flex h-full w-2/5 items-center justify-between pl-4">
-              <p class="w-96 text-gray-500">
+            <div class="flex flex-col pt-4 h-full w-full justify-center
+            xl:w-2/5 xl:pl-4 xll:pt-0 xll:flex-row xll:items-center xll:gap-2 xll:justify-between">
+              <p class="w-80% text-gray-500 text-justify hyphens-auto text-sm
+              xl:w-96 lg:text-left lg:hyphens-none xl:text-base">
                 O layout do projeto consiste em duas telas principais: uma tela
                 de login e outra da página inicial. Foram implementadas algumas
                 funcionalidades, como a criação de novos usuários e novos
@@ -219,13 +234,16 @@
                 front utilizando regex.
               </p>
               <button
-                class="mt-14 flex h-16 w-16 items-center justify-center rounded-full bg-gray-600 duration-200 hover:bg-[#000000d8]"
+                class="flex mt-3 h-12 w-full items-center rounded-xl justify-center bg-gray-600 duration-200 hover:bg-[#000000d8]
+                xll:h-16 xll:w-16 xll:rounded-full xll:mt-14 xll:mb-3"
                 id="openModalTrainee"
                 type="button"
                 href="#"
-              >
+              > 
+                <p class="text-1 xll:hidden">Ver Imagens</p>
                 <img
-                  class="h-9 w-9"
+                  class="hidden h-9 w-9
+                  xll:flex"
                   src="./assets/imgs/lupa.png"
                   alt="Mais imagens"
                 />
@@ -233,12 +251,17 @@
             </div>
           </div>
         </div>
-        <span class="h-px bg-gray-300 w-custom-w"></span>
+        <span class="h-px bg-gray-300 w-[80vw]
+        lg:w-custom-w"></span>
 
-        <div class="flex h-80 w-custom-w flex-col">
+        <div class="flex h-full w-[80vw] flex-col
+        lg:h-80 lg:w-custom-w">
           <div class="flex h-24 w-full justify-between pt-6">
             <div class="flex h-4/5 w-72 flex-col gap-2">
-              <h3 class="text-xl font-medium text-4">Netflix Gamified</h3>
+              <h3 class="font-medium text-4
+              lg:text-xl">
+                Netflix Gamified
+              </h3>
               <div class="flex gap-1 pl-2">
                 <img
                   class="h-5 w-5"
@@ -257,7 +280,8 @@
                 />
               </div>
             </div>
-            <div class="flex h-4/5 w-40 justify-end gap-2">
+            <div class="flex flex-col h-4/5 w-40 items-end gap-2
+            sx:flex-row sx:justify-end">
               <a
                 class="flex h-7 w-24 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white"
                 href="https://net-gamified.netlify.app/"
@@ -265,59 +289,72 @@
                 >Ver Projeto</a
               >
               <a
-                class="flex h-7 w-16 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white"
+              class="flex h-7 w-24 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white
+              lg:h-7 lg:w-16"
                 href="https://github.com/Jeferson0Silva/Netflix"
                 target="_blank"
                 >GitHub</a
               >
             </div>
           </div>
-          <div class="flex h-full w-full">
-            <div class="flex h-full w-3/5 items-center gap-6">
+          <div class="flex h-full w-full flex-col items-center gap-3 mb-3
+          lg:flex-row lg:mb-0 lg:gap-0">
+            <div class="flex h-full w-full pt-4 items-center justify-center gap-6
+            xl:pt-0 xl:w-3/5 fh:justify-start">
               <img
                 class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
                 src="/src/assets/imgs/Netflix1.png"
                 alt=""
               />
               <img
-                class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
+                class="hidden h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]
+                xl:flex"
                 src="/src/assets/imgs/Netflix2.png"
                 alt=""
               />
               <img
-                class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
+                class="hidden h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]
+                fh:flex"
                 src="/src/assets/imgs/Netflix3.png"
                 alt=""
               />
             </div>
-            <div class="flex h-full w-2/5 items-center justify-between pl-4">
-              <p class="w-96 text-gray-500">
+            <div class="flex flex-col pt-4 h-full w-full justify-center
+            xl:w-2/5 xl:pl-4 xll:pt-0 xll:flex-row xll:items-center xll:gap-2 xll:justify-between">
+              <p class="w-80% text-gray-500 text-justify hyphens-auto text-sm
+              xl:w-96 lg:text-left lg:hyphens-none xl:text-base">
                 O layout é baseado no design da Netflix, com modificações para
                 deixá-lo gamificado. Foram implementadas algumas funcionalidades
                 para mostrar a descrição do filme, exibir amigos que já
                 assistiram, e banners customizados.
               </p>
               <button
-                class="mt-14 flex h-16 w-16 items-center justify-center rounded-full bg-gray-600 duration-200 hover:bg-[#000000d8]"
+                class="flex mt-3 h-12 w-full items-center rounded-xl justify-center bg-gray-600 duration-200 hover:bg-[#000000d8]
+                xll:h-16 xll:w-16 xll:rounded-full xll:mt-14 xll:mb-3"
                 id="openModalNetflix"
                 type="button"
                 href="#"
               >
+                <p class="text-1 xll:hidden">Ver Imagens</p>
                 <img
-                  class="h-9 w-9"
-                  src="./assets/imgs/lupa.png"
-                  alt="Mais imagens"
-                />
+                  class="hidden h-9 w-9
+                  xll:flex"
+                    src="./assets/imgs/lupa.png"
+                    alt="Mais imagens"
+                  />
               </button>
             </div>
           </div>
         </div>
-        <span class="h-px bg-gray-300 w-custom-w"></span>
+        <span class="h-px bg-gray-300 w-[80vw]
+        lg:w-custom-w"></span>
 
-        <div class="flex h-80 w-custom-w flex-col">
+        <div class="flex h-full w-[80vw] flex-col
+        lg:h-80 lg:w-custom-w">
           <div class="flex h-24 w-full justify-between pt-6">
             <div class="flex h-4/5 w-72 flex-col gap-2">
-              <h3 class="text-xl font-medium text-4">
+              <h3 class="font-medium text-4
+              lg:text-xl">
                 Milao Job Search Platform
               </h3>
               <div class="flex gap-1 pl-2">
@@ -333,7 +370,8 @@
                 />
               </div>
             </div>
-            <div class="flex h-4/5 w-40 justify-end gap-2">
+            <div class="flex flex-col h-4/5 w-40 items-end gap-2
+            sx:flex-row sx:justify-end">
               <a
                 class="flex h-7 w-24 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white"
                 href="https://milao-job.netlify.app/"
@@ -341,99 +379,114 @@
                 >Ver Projeto</a
               >
               <a
-                class="flex h-7 w-16 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white"
+              class="flex h-7 w-24 items-center justify-center rounded-full border border-solid border-gray-600 text-xs font-medium text-5 duration-200 hover:border-3 hover:bg-4 hover:text-white
+              lg:h-7 lg:w-16"
                 href="https://github.com/Jeferson0Silva/milao-sala-b"
                 target="_blank"
                 >GitHub</a
               >
             </div>
           </div>
-          <div class="flex h-full w-full">
-            <div class="flex h-full w-3/5 items-center gap-6">
+          <div class="flex h-full w-full flex-col items-center gap-3 mb-3
+          lg:flex-row lg:mb-0 lg:gap-0">
+            <div class="flex h-full w-full pt-4 items-center justify-center gap-6
+            xl:pt-0 xl:w-3/5 fh:justify-start">
               <img
                 class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
                 src="/src/assets/imgs/Milao1.png"
                 alt=""
               />
               <img
-                class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
+                class="hidden h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]
+                xl:flex"
                 src="/src/assets/imgs/Milao2.png"
                 alt=""
               />
               <img
-                class="h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]"
+                class="hidden h-44 w-60 rounded-md object-cover object-center duration-200 hover:scale-[1.1]
+                fh:flex"
                 src="/src/assets/imgs/Milao3.png"
                 alt=""
               />
             </div>
-            <div class="flex h-full w-2/5 items-center justify-between pl-4">
-              <p class="w-96 text-gray-500">
+            <div class="flex flex-col pt-4 h-full w-full justify-center
+            xl:w-2/5 xl:pl-4 xll:pt-0 xll:flex-row xll:items-center xll:gap-2 xll:justify-between">
+              <p class="w-80% text-gray-500 text-justify hyphens-auto text-sm
+              xl:w-96 lg:text-left lg:hyphens-none xl:text-base">
                 O layout tem como objetivo ser uma plataforma de busca para
                 vagas de emprego. A parte básica está desenvolvida, mas ainda
                 faltam implementar as funcionalidades.
               </p>
               <button
-                class="mt-14 flex h-16 w-16 items-center justify-center rounded-full bg-gray-600 duration-200 hover:bg-[#000000d8]"
+                class="flex mt-3 h-12 w-full items-center rounded-xl justify-center bg-gray-600 duration-200 hover:bg-[#000000d8]
+                xll:h-16 xll:w-16 xll:rounded-full xll:mt-14 xll:mb-3"
                 id="openModalMilao"
                 type="button"
                 href="#"
               >
+                <p class="text-1 xll:hidden">Ver Imagens</p>
                 <img
-                  class="h-9 w-9"
-                  src="./assets/imgs/lupa.png"
-                  alt="Mais imagens"
-                />
+                  class="hidden h-9 w-9
+                  xll:flex"
+                    class="h-9 w-9"
+                    src="./assets/imgs/lupa.png"
+                    alt="Mais imagens"
+                  />
               </button>
             </div>
           </div>
         </div>
-        <span class="h-px bg-gray-300 w-custom-w"></span>
+        <span class="h-px bg-gray-300 w-[80vw]
+        lg:w-custom-w"></span>
       </div>
     </main>
-    <footer class="mt-24 flex h-auto flex-col bg-4" id="contato">
-      <div class="flex h-[30vh] w-full flex-col items-center gap-5">
-        <h2 class="pt-6 text-4xl font-light text-white">Contato</h2>
+    <footer class="mt-24 pb-12 flex h-auto flex-col bg-4
+    sx:pb-0" id="contato">
+      <div class="flex h-[30vh] w-full flex-col items-center gap-3 text-sm text-white
+      sx:gap-5 sx:text-base">
+        <h2 class="pt-6 text-2xl
+        sx:text-3xl sm:text-4xl">Contato</h2>
         <a
-          class="flex h-[40px] w-auto items-center justify-center gap-6 rounded-md border border-solid border-black px-2 duration-200 hover:bg-[#00000060]"
+          class="flex h-[40px] w-auto items-center justify-center gap-6 rounded-md bg-[#383838] px-4 duration-200 hover:bg-[#00000060]"
           href="https://wa.me/5561991600196"
           target="_blank"
         >
           <img
-            class="h-[30px] w-[30px]"
+            class="h-[28px] w-[28px] p-1"
             src="./assets/imgs/wpp.png"
             alt="whatsapp icon"
           />
-          <p class="w-[120px] font-light text-white">61 99160-0196</p>
+          <p class="w-[120px] text-sm">61 99160-0196</p>
         </a>
         <a
-          class="flex h-[40px] w-auto items-center justify-center gap-6 rounded-md border border-solid border-black px-2 duration-200 hover:bg-[#00000060]"
+          class="flex h-[40px] w-auto items-center justify-center gap-6 rounded-md bg-[#383838] px-4 duration-200 hover:bg-[#00000060]"
           href="mailto:jefersonsas12@gmail.com"
           target="_blank"
         >
           <img
-            class="h-[30px] w-[30px]"
-            src="./assets/imgs/o-email.png"
+            class="h-[28px] w-[28px] p-1"
+            src="./assets/imgs/o-emailw.png"
             alt="Email icon"
           />
-          <p class="w-[120px] pl-6 font-light text-white">E-Mail</p>
+          <p class="w-[120px] pl-6">E-Mail</p>
         </a>
         <a
-          class="flex h-[40px] w-auto items-center justify-center gap-6 rounded-md border border-solid border-black px-2 duration-200 hover:bg-[#00000060]"
+          class="flex h-[42px] w-auto items-center justify-center gap-6 rounded-md bg-[#383838] px-4 duration-200 hover:bg-[#00000060]"
           href="https://www.linkedin.com/in/jeferson-silva-958bb0279/"
           target="_blank"
         >
           <img
-            class="h-[30px] w-[30px]"
-            src="./assets/imgs/linkedin.png"
+            class="h-[28px] w-[28px] p-1"
+            src="./assets/imgs/linkedinw.png"
             alt="Linkedin icon"
           />
-          <p class="w-[120px] pl-4 font-light text-white">Linked In</p>
+          <p class="w-[120px] pl-4">Linked In</p>
         </a>
       </div>
     </footer>
 
     <button
-      class="fixed bottom-5 right-5 hidden h-[50px] w-[50px] cursor-pointer rounded-full bg-gray-600 text-2xl text-white transition hover:scale-110 hover:bg-[#363636]"
+      class="fixed bottom-5 right-5 hidden h-[50px] w-[50px] cursor-pointer rounded-full bg-[#383838] text-2xl text-white transition hover:scale-110"
       id="btnTop"
     >
       ↑
