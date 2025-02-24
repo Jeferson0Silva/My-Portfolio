@@ -71,26 +71,26 @@ const openBtnTrainee = container.querySelector("#openModalTrainee")
 openBtnTrainee.addEventListener("click", (e) => {
   e.preventDefault()
   openModal([
-    "./assets/imgs/Trainee1.png",
-    "./assets/imgs/Trainee2.png",
-    "./assets/imgs/Trainee3.png",
+    "/src/assets/imgs/Trainee1.png",
+    "/src/assets/imgs/Trainee2.png",
+    "/src/assets/imgs/Trainee3.png",
   ])
 })
 
 openBtnNetflix.addEventListener("click", (e) => {
   e.preventDefault()
   openModal([
-    "./assets/imgs/Netflix1.png",
-    "./assets/imgs/Netflix2.png",
-    "./assets/imgs/Netflix3.png",
+    "/src/assets/imgs/Netflix1.png",
+    "/src/assets/imgs/Netflix2.png",
+    "/src/assets/imgs/Netflix3.png",
   ])
 })
 
 openBtnMilao.addEventListener("click", (e) => {
   e.preventDefault()
   openModal([
-    "./assets/imgs/Milao1.png",
-    "./assets/imgs/Milao2.png",
-    "./assets/imgs/Milao3.png",
+    "/src/assets/imgs/Milao1.png",
+    "/src/assets/imgs/Milao2.png",
+    "/src/assets/imgs/Milao3.png",
   ])
 })
