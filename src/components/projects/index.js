@@ -15,13 +15,13 @@ const carousel = (url) => {
                 <img class="imgs" src="${url}" alt="Carousel de imagens" />
             </div>
             <button class="prevBtn">
-                <img class="imgPrevBtn" src="./assets/imgs/prevbtn.png" alt="previous button">
+                <img class="imgPrevBtn" src="/src/assets/imgs/prevbtn.png" alt="previous button">
             </button>
             <button class="nextBtn">
-                <img class="imgNextBtn" src="./assets/imgs/nextbtn.png" alt="next button">
+                <img class="imgNextBtn" src="/src/assets/imgs/nextbtn.png" alt="next button">
             </button>
             <button id="closeBtn" class="closeBtn">
-                <img class="imgCloseBtn" src="./assets/imgs/closebtn.png" alt="close button">
+                <img class="imgCloseBtn" src="/src/assets/imgs/closebtn.png" alt="close button">
             </button>
         </div>
     </div>
