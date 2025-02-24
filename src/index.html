@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/src/assets/css/style.css" />
     <link rel="stylesheet" href="/src/components/projects/style.css" />
     <link rel="stylesheet" href="/src/components/about/style.css" />
+    <link rel="stylesheet" href="/src/assets/js/button/style.css">
+    <link rel="stylesheet" href="/src/assets/js/animations/style.css">
     <title>Portfolio</title>
   </head>
 
@@ -50,7 +52,7 @@
     </header>
     <main class="flex flex-col">
       <div
-        class="flex h-custom-h w-full flex-col justify-center items-center gap-20 px-10
+        class="flex h-custom-h w-full flex-col justify-center items-center gap-20 px-10 animation
         lg:px-20"
       >
         <div class="flex max-w-[614.77px] justify-center">
@@ -115,7 +117,7 @@
       </div>
       <div class="flex h-[60vh] flex-col gap-36 
       sm:h-custom-1 lg:pt-36" id="sobre">
-        <div class="flex w-full flex-col items-center 
+        <div class="flex w-full flex-col items-center animation 
         xl:px-24">
           <div class="flex flex-col h-full w-custom-w
           sm:gap-16 lg:flex-row xll:pl-48 xll:pr-36">
@@ -147,7 +149,7 @@
           </div>
         </div>
         <div
-          class="carouselContainer relative flex h-16 w-full text-1 text-lg items-center overflow-hidden bg-4
+          class="carouselContainer relative flex h-16 w-full text-1 text-lg items-center overflow-hidden bg-4 animation
           md:h-20 md:font-semibold"
         ></div>
       </div>
@@ -155,10 +157,10 @@
         <div class="flex h-28 w-[80vw] justify-between
         lg:w-custom-w">
           <h2 class="text-2xl text-4
-          sx:text-3xl sm:text-4xl lg:text-5xl">Explore Meus Projetos</h2>
+          sx:text-3xl sm:text-4xl lg:text-5xl animation">Explore Meus Projetos</h2>
         </div>
 
-        <div class="flex h-full w-[80vw] flex-col
+        <div class="flex h-full w-[80vw] flex-col animation
         lg:h-80 lg:w-custom-w">
           <div class="flex h-24 w-full justify-between pt-6">
             <div class="flex h-4/5 w-72 flex-col gap-2">
@@ -250,11 +252,11 @@
               </button>
             </div>
           </div>
+          <span class="h-px bg-gray-300 w-[80vw]
+          lg:w-custom-w"></span>
         </div>
-        <span class="h-px bg-gray-300 w-[80vw]
-        lg:w-custom-w"></span>
 
-        <div class="flex h-full w-[80vw] flex-col
+        <div class="flex h-full w-[80vw] flex-col animation
         lg:h-80 lg:w-custom-w">
           <div class="flex h-24 w-full justify-between pt-6">
             <div class="flex h-4/5 w-72 flex-col gap-2">
@@ -345,11 +347,11 @@
               </button>
             </div>
           </div>
+          <span class="h-px bg-gray-300 w-[80vw]
+          lg:w-custom-w"></span>
         </div>
-        <span class="h-px bg-gray-300 w-[80vw]
-        lg:w-custom-w"></span>
 
-        <div class="flex h-full w-[80vw] flex-col
+        <div class="flex h-full w-[80vw] flex-col animation
         lg:h-80 lg:w-custom-w">
           <div class="flex h-24 w-full justify-between pt-6">
             <div class="flex h-4/5 w-72 flex-col gap-2">
@@ -435,13 +437,14 @@
               </button>
             </div>
           </div>
+          <span class="h-px bg-gray-300 w-[80vw]
+          lg:w-custom-w"></span>
         </div>
-        <span class="h-px bg-gray-300 w-[80vw]
-        lg:w-custom-w"></span>
       </div>
     </main>
-    <footer class="mt-24 pb-12 flex h-auto flex-col bg-4
-    sx:pb-0" id="contato">
+
+    <footer class="mt-24 pb-8 flex h-auto flex-col bg-4
+    sx:pb-8 sx:pt-8" id="contato">
       <div class="flex h-[30vh] w-full flex-col items-center gap-3 text-sm text-white
       sx:gap-5 sx:text-base">
         <h2 class="pt-6 text-2xl
@@ -486,14 +489,15 @@
     </footer>
 
     <button
-      class="fixed bottom-5 right-5 hidden h-[50px] w-[50px] cursor-pointer rounded-full bg-[#383838] text-2xl text-white transition hover:scale-110"
+      class="fixed bottom-5 right-5 hidden h-[50px] w-[50px] cursor-pointer rounded-full bg-[#383838] text-2xl text-white transition hover:scale-110 animate-bounce"
       id="btnTop"
     >
       ↑
     </button>
 
-    <script type="module" src="/src/assets/js/button-top/index.js"></script>
     <script type="module" src="/src/components/about/index.js"></script>
     <script type="module" src="/src/components/projects/index.js"></script>
+    <script type="module" src="/src/assets/js/button/index.js"></script>
+    <script type="module" src="/src/assets/js/animations/index.js"></script>
   </body>
 </html>
